@@ -15,7 +15,7 @@ html,body{
 body{
   font-family: 'DM Sans', sans-serif;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 33px;
   color: rgba(255, 255, 255, 0.70);
   background: #191919;
@@ -46,9 +46,9 @@ input,textarea{
 }
 
 .container{
-  max-width: 1420px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .title{
@@ -215,21 +215,22 @@ input,textarea{
 .episodes__item-episode{
   display: inline-block;
   color: #118DA8;
-  font-size: 17px;
-  font-weight: 400;
+  font-size: 17px; 
   line-height: 27px;
   margin-top: 50px;
 }
 
 .episodes__item-title{
+  color: #FFFFFF;
   line-height: 70px;
   letter-spacing: 2.5px;
   margin-top: 20px;
+  font-size: 60px;
+  font-weight: 400;
   max-width: 700px;
 }
 
 .episodes__item-text{
-  font-weight: 400;
   line-height: 33px;
   max-width: 755px;
   margin-top: 25px;
@@ -237,7 +238,6 @@ input,textarea{
 
 .episodes__item-details{
   font-size: 18px;
-  font-weight: 400;
   line-height: 27px;
   color: #ffffff;
   background-color: #118DA8;
@@ -245,6 +245,46 @@ input,textarea{
   padding: 12px 15px 12px 20px;
   margin-top: 25px;
 }
+
+.host{
+  padding: 100px 0;
+}
+
+.host__content{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.host__info{
+  align-self: center;
+}
+
+.host__message{
+  font-size: 18px;
+  color: #118DA8;
+  line-height: 27px;
+  margin-top: 20px;
+}
+
+.host__name{
+  color: #FFFFFF;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 79px;
+  letter-spacing: 2.9px;
+}
+
+.host__text{
+  max-width: 555px;
+  margin-top: 30px;
+}
+
+.host__image{
+  border-radius: 15px;
+}
+
+/* Adaptive */
 
 @media (max-width: 1260px){
   .header__image{
@@ -275,6 +315,16 @@ input,textarea{
 
   .episodes__item-title, .episodes__item-text{
     max-width: none;
+  }
+
+  .host__content{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .host__image{
+    order: -1;
   }
 }
 
@@ -339,15 +389,22 @@ input,textarea{
   }
 }
 
+@media (max-width: 670px){
+  .host__image{
+    width: 100%;
+    max-width: 560px;
+  }
+}
+
 @media (max-width: 525px){
   .title{
-    font-size: 54px;
-    line-height: 68px;
+    font-size: 65px;
+    line-height: 74px;
     letter-spacing: 2.4px;
   }
 
   .header__title{
-    font-size: 50px;
+    font-size: 60px;
     line-height: 65px;
   }
 
@@ -369,12 +426,21 @@ input,textarea{
   .episodes__item-details{
     font-size: 16px;
   }
+
+  .host__name{
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .host__text{
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 420px){
   .header__title{
-    font-size: 38px;
-    line-height: 50px;
+    font-size: 58px;
+    line-height: 68px;
   }
 
   .underlined::before{
@@ -394,8 +460,8 @@ input,textarea{
 
 @media (max-width: 365px){
   .header__title{
-    font-size: 34px;
-    line-height: 47px;
+    font-size: 48px;
+    line-height: 60px;
   }
 
   .underlined::before{
@@ -410,8 +476,8 @@ input,textarea{
     font-size: 16px;
     line-height: 26px;
   }
-}
 
-@media (max-width: 320px){
-
+  .host__link-img{
+    max-width: 100px;
+  }
 }
