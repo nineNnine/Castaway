@@ -46,9 +46,9 @@ input,textarea{
 }
 
 .container{
-  max-width: 1420px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .title{
@@ -156,14 +156,14 @@ input,textarea{
   align-self: center;
 }
 
-.social__links-title{
+.stream__links-title{
   font-size: 15px;
   line-height: 24px;
   color: #fff;
   margin-bottom: 15px;
 }
 
-.social__links-list{
+.stream__links-list{
   display: flex;
   gap: 15px;
 }
@@ -359,6 +359,42 @@ input,textarea{
   padding: 10px 15px 10px 20px;
 }
 
+.footer{
+  padding: 100px 0;
+}
+
+.footer__box{
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.footer__social{
+  margin-top: 25px;
+}
+
+.footer__social-links-list{
+  display: flex;
+  gap: 10px;
+}
+
+.footer__links{
+  display: flex;
+  gap: 100px;
+}
+
+.footer__links-list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__link{
+  color: #FFF;
+  font-size: 18px;
+  line-height: 27px;
+}
+
 /* Adaptive */
 
 @media (max-width: 1440px){
@@ -423,6 +459,13 @@ input,textarea{
     min-width: 0;
     width: 100%;
     max-width: 650px;
+  }
+}
+
+@media (max-width: 990px) {
+  .footer__box{
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 
